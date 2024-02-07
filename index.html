@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        
+        <div class="logo"><span>A</span>tul.</div>
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-regular fa-circle-xmark fas" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Java Developer</p>
+        <h1>Hi, I'm <span> Atul </span> <br> Kumar Gajar From India</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- ----------------about-------------- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/1689618797438 (1).jpg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>Atul Kumar Gajar, currently pursuing a Master of Computer Application at the National Institute of Technology, Raipur, is a dedicated and skilled Java developer with a passion for web development. With a solid academic background and a CGPA of 7.63, he has demonstrated proficiency in various programming languages and web technologies, including Java, HTML, CSS, and Bootstrap4.</p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Technical Skills:</span><br>Java, HTML, CSS, Bootstrap4, Hibernate, Spring MVC, Spring Boot, Maven, JPA, MySQL, API Development.</li>
+              <li><span>Other Skills: </span><br>Data Structures, Algorithms, Java Servlets, JSP, IDEs: NetBeans, VisualStudio, Eclipse, STS, Postman.</li>
+              <li><span>Soft Skills: </span><br>Communication, Teamwork, Presentation.</li>
+            </ul>
+          </div>
+          
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>Master of Computer Application (Pursuing, 2021-2024)</span><br>National Institute of Technology, Raipur.</li>
+              <li><span>Bachelor of Science (2020)</span><br>Jain College, Bhind.</li>
+              <li><span>Intermediate (2017)</span><br>Rajendra Convent Higher Secondary School, Bhind.</li>
+              <li><span>High School (2014)</span><br>Rajendra Convent Secondary School (CBSE), Bhind.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- -------------------services-------------- -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Development</h2>
+          <p>
+            Empowering businesses with dynamic and secure web solutions through Java-based development expertise.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-sharp fa-solid fa-crop-simple"></i>
+          <h2>Backend Development</h2>
+          <p>Driving seamless and robust backend solutions with Java's versatility and reliability.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store"></i>
+          <h2>Database Management</h2>
+          <p>Efficiently managing relational databases with SQL for seamless data organization and retrieval.</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ----------------portfolio----------- -->
+  
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work1.png">
+          <div class="layer">
+            <h3>TechPost</h3>
+            <p>TechPost Learning Website fosters collaborative learning by providing users with a platform to create, share, and explore technical posts. With features like category filtering and user profile updates, it promotes knowledge sharing and engagement.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work2.png">
+          <div class="layer">
+            <h3>ShopCart</h3>
+            <p>ShopCart Online Store simplifies the shopping experience, allowing users to browse and purchase products seamlessly. With features like an admin module for inventory management and a hassle-free checkout process, it ensures efficient and organized transactions.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work3.png">
+          <div class="layer">
+            <h3>Job Seeker Hub</h3>
+            <p>Job Seeker Hub facilitates job seekers in creating profiles, connecting with employers, and tracking applications. With modules for job creation and user engagement, it streamlines the job search process and fosters a vibrant community for insights sharing.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+
+  <!-- ---------------------contact---------- -->
+
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i> atul.nit.mca@gmail.com</p>
+          <p><i class="fa-solid fa-square-phone"></i> +91-9691136377</p>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            
+          </div>
+          <a href="images/Atul_resume (5).pdf" download class="btn btn2">Download Resume</a>
+        </div>
+        <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p><i class="fa-solid fa-copyright"></i> 2024 Atul. All right reserved.</p>
+    </div>
+  </div>
+
+
+  <script>
+    // -------about function-----
+    let tablinks=document.getElementsByClassName("tab-links");
+    let tabcontents=document.getElementsByClassName('tab-contents');
+    function opentab(tabname){
+    
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+    // ---------------menu function----------------
+    let sidemenu=document.getElementById('sidemenu');
+    function openmenu(){
+      sidemenu.style.right='0';
+    }
+    function closemenu(){
+      sidemenu.style.right='-200px';
+    }
+
+  </script>
+
+</body>
+</html>
